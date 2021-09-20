@@ -1,0 +1,194 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 5%;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 7px;
+}
+
+.sidenav a {
+    padding: 2px 8px 2px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    transition: 0.7s;
+}
+i{
+    padding: 7px;
+}
+.sidenav a:hover {
+    /* color: #f1f1f1; */
+    color: red;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 26px;
+    margin-left: 30px;
+}
+.key{
+    position: fixed;
+    top: 0;
+    /* right: 100px; */
+    font-size: 10px;
+    margin-top: 0px;
+    margin-left: 10px;
+    /* background-color: black; */
+}
+.top{
+    top: 0;
+    padding-right: 5px;
+    margin-left: 50%;
+    margin-right: 50%;
+    /* background-color: black; */
+}
+.top:hover{
+    cursor: pointer;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 10px;
+    background-color: lightgrey;
+}
+.kemi{
+    /* margin-right: 70%; */
+    margin-left: 15%;
+    margin-top: 20px;
+    /* padding-left: 10px; */
+    padding-bottom: 10px;
+    background-color: white;
+    width: 35%;
+    font-size: 18px;
+    height: 20%;
+}
+p{
+    padding-top: 20px;
+    padding: 10px;
+}
+#tayo{
+    margin-left: 10px;
+}
+select{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    width: 90%;
+    font-size: 17px;
+}
+select:focus{
+    background-color: whitesmoke;
+}
+option:hover{
+    background-color: white;
+}
+label{
+    color: violet;
+}
+input{
+    border: none;
+    outline: none;
+    background-color: red;
+    width: 30%;
+    margin-left: 30%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+input:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 90%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/* On mouse-over  */
+  .dropdown-btn:hover {
+    color: red;
+}
+/* Add an active class to the active dropdown button */
+.active {
+    /* background-color: red; */
+    color: black;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626 ;
+    opacity: 0.8;
+    padding-left: 20px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+@media screen and (max-height: 300px) {
+    .sidenav {
+        /* padding-top: 10px; */
+        /* padding-top: 1px; */
+        /* margin-top: 5px; */
+        top: 0;
+        /* height: 150%; */
+      }
+    .sidenav a {
+        
+        font-size:12px;
+        padding: 0px 5px 3px 18px;
+      }
+    }
+    @media screen and (min-height: 300px) {
+      .kemi{
+        /* margin-right: 10%; */
+        margin-left: 10%;
+        margin-top: 50px;
+        padding-left: 10px;
+        padding-bottom: 10px;   
+        background-color: white;
+        width: 75%;
+        font-size: 18px;
+        /* height: 50%; */
+    }
+    select{
+        width: 90%;
+        font-size: 17px;
+        
+    }
+    input{
+        
+        width: 30%;
+        margin-left: 30%;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    p{
+        padding-top: 10px;
+    }
+    #tayo{
+        margin-left: 15px;
+    }
+  }

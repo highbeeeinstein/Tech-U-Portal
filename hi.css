@@ -1,0 +1,9 @@
+.flex-container{
+    display: flex
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+.flex-container>div{
+    margin: 10px;
+    padding: 2px;
+}

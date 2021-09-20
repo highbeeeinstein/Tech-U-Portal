@@ -1,0 +1,210 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 5%;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 7px;
+}
+
+.sidenav a {
+    padding: 2px 8px 2px 18px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    transition: 0.7s;
+}
+i{
+    padding: 7px;
+}
+.sidenav a:hover {
+    /* color: #f1f1f1; */
+    color: red;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 26px;
+    margin-left: 30px;
+}
+.key{
+    position: fixed;
+    top: 0;
+    /* right: 100px; */
+    font-size: 10px;
+    margin-top: 0px;
+    margin-left: 10px;
+    /* background-color: black; */
+}
+.top{
+    top: 0;
+    padding-right: 5px;
+    margin-left: 50%;
+    margin-right: 50%;
+    /* background-color: black; */
+}
+.top:hover{
+    cursor: pointer;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 10px;
+    background-color: lightgrey;
+}
+.dayo{
+    background-color: white;
+    height: 50%;
+    padding: 20px;
+}
+#temi{
+    border: 1px solid black;
+    padding: 25px 100px 15px 100px;
+    margin-left: 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-top: 0%;
+    /* width: 100%; */
+}
+#sade{
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    /* width: 100%; */
+}
+input{
+    border: none;
+    outline: none;
+    border-bottom:1px solid lightgrey ;
+    padding: 15px;       
+    height: 3px;
+    width: 300px;
+} 
+#foye{
+    border: 1px solid black;
+    margin-top: 20px;
+    height: 30%;
+    padding: 20px;
+    margin-left: 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    /* margin-bottom: 30px; */
+    /* width: 100%; */
+} 
+#tade{
+    border: 1px solid black;
+    padding: 15px 10px 15px 10px;
+    margin-left: 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-top: 0%;
+    /* width: 100%; */
+  }
+  #luku{
+      background-color: red;
+    padding: 5px 100px 5px 100px;
+    text-align: center;
+    margin-left: 2px;
+    border-radius: 3px;
+    margin-right: 2px;
+    margin-top: 0%;  
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+  /* #tola{
+      background-color: yellow;
+    border: 1px solid black;
+    padding: 3px 2px 3px 2px;
+    margin-left: 55px;
+    border-radius: 3px;
+    margin-right: 65px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+     width: 100%; 
+  } */
+  a{
+      cursor: pointer;
+      text-decoration: none;
+  }
+  #luku:hover{
+      background-color: lightskyblue;
+  }
+  .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 90%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/* On mouse-over  */
+  .dropdown-btn:hover {
+    color: red;
+}
+/* Add an active class to the active dropdown button */
+.active {
+    /* background-color: red; */
+    color: black;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626 ;
+    opacity: 0.8;
+    padding-left: 20px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+@media screen and (max-height: 600px) {
+    .sidenav {
+        /* padding-top: 10px; */
+        /* padding-top: 1px; */
+        /* margin-top: 5px; */
+        top: 0;
+        /* height: 150%; */
+      }
+    .sidenav a {
+        font-size: 12px;
+        padding: 0px 5px 3px 18px;
+      }
+      #temi{
+          width: 47%;
+          /* margin-right: 30px; */
+      }
+      #sade{
+          width: 90%;
+      }
+      input{
+          width: 200px;
+      }
+      /* i{
+        padding: 5px;
+    }
+      */
+    
+  }

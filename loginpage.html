@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech U Login</title>
+    <!-- <link rel="stylesheet" href="dashboard.html"> -->
+    <style>
+        body{
+            background-image: url("background.jpg");
+            opacity: 1;
+            background-position: cover;
+            /* background-repeat: no-repeat; */
+            width: 100%;
+        }
+        .pot{
+            background-color: white;
+            margin: auto;
+            width: 400px;
+            height: 40%;
+        }
+        .sop{
+            color: white;
+            padding-top:40px;
+            text-align: center;
+            height: 30%;
+        }
+        .sas{
+            margin: 25px;
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: red;
+        }
+        /* #fat{
+            height: 75%;
+        } */
+        input.lati{
+            border: none;
+            outline: none;
+            border-bottom:1px solid lightgrey ;
+            padding: 10px;       
+            height: 3px;
+            width: 300px;
+        }  
+        
+        input.lati:focus {
+            border-bottom: 2px solid blue;
+            color: royalblue;
+            /* color: blueviolet; */
+        }
+        label{
+            color: royalblue;
+          
+        }
+        input[type="submit"]{
+            border: none;
+            outline: none;
+            margin: auto;
+            width: 310px;
+            height: 80px;
+            padding: 20px;
+            font-size: 23px;
+            border-radius: 5px;
+            background-color:rgb(255,0,0);
+            color: white;
+            text-align: center;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="sop">
+        Welcome to Tech U Portal
+    </h1>
+    <div class="pot">
+        <img src="logo_login.png" alt="logo login" width=300px; style="margin: auto;">
+        <form class="sas" action="./dashboard.html">
+            <label for="wissy">Login ID</label>
+            <br>
+            <input type="text" name="Login ID" id="wissy" class="lati" required>
+            <br><br>
+            <br>
+            <label for="agbami"> Password</label>
+            <br>
+            <input type="password" name="pwd" id="agbami" class="lati" required>
+            <br><br>
+            <br>
+            <input type="submit"name="submit"value="LOGIN"id="fat">
+
+        </form>
+        <p style="text-align: center;"><a href="forgot_pass.html">Forgot your password?</a></p> <br>
+    </div>
+</body>
+</html>
