@@ -12,6 +12,7 @@
     
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <img src="/logo_login.png" width="100em" height="60px" style="border-radius: 50%; margin-left: 50px;" alt="">
          <a href="dashboard.html">
             <i class="fa fa-clock"></i>
             Dashboard
@@ -61,7 +62,7 @@
             <i class="fa fa-wifi"></i>
                 Internet Access
         </a>
-        <a href="">
+        <a href="history.html">
             <i class="fa fa-book"></i>
             Course History
         </a>
@@ -123,13 +124,26 @@
       </div>
       
       <div id="main">
-         <div class="top">
-             <img src="./logo_login.png" width="100em" height="60px"  alt="" >
+
+         <div class="dropdown">
              
+            <button onclick="myFunction()" class="dropbtn">
+                <div class="top">
+             <img src="./img_avatar2.png" width="100em" height="60px" style="border-radius: 50%;" alt="" >
+            <p style="color: white; padding: 5px;">125/18/1/0043</p>
+        </div>
+        </button>
+    
+        <div id="myDropdown" class="dropdown-content">
+            <a href="profile.html">My Profile</a>
+            <a href="loginpage.html">Logout</a>
+            <!-- <a href="#contact">Contact</a> -->
+          </div>
          </div> 
          <!-- <span class="porto">
             <i class="fa fa-bars">open</i>
          </span> -->
+         <!-- (228, 242, 243, 1) -->
         <p>Account Dashboard</p>
         <h4 style="color: red;"> 125/18/1/0043</h4>
         <h3 style="color: red;">WAHAB IBRAHEEM IYANDA </h3>
@@ -137,7 +151,10 @@
         <div class="my">
             <!-- <p class="mip">
                 Part 3 -->
-                <img src="./logo_login.png" width="100em" class="ball" height="60px" alt=""> 
+                <!-- <img src="./logo_login.png" width="100em" class="ball" height="60px" alt="">  -->
+                <i class="fa fa-chart-bar" aria-hidden="true" style="color: white; border: 1px solid red; background-color: red; padding-left: 30px;
+                padding-top: 0px; margin-top: 20px; margin-left: 20px;
+                 border-radius: 50%; height: 60px; width: 50px; "></i>
                 <span class="mip">
                     <span  style="font-size: 17px; padding-left: 5%;">
                     Part 3
@@ -154,7 +171,10 @@
         <div class="my">
             <!-- <p class="mip">
                 Part 3 -->
-                <img src="./logo_login.png" width="100em" class="ball" height="60px" alt=""> 
+                <!-- <img src="./logo_login.png" width="100em" class="ball" height="60px" alt="">  -->
+                <i class="fa fa-bullseye" aria-hidden="true" style="color: white;  background-color: yellow; padding-left: 30px;
+                padding-top: 0px; margin-top: 20px; margin-left: 20px;
+                 border-radius: 50%; height: 60px; width: 50px; "></i>
                 <span class="mip">
                     <span  style="font-size: 17px; padding-left: -6%;">
                     Computer Science
@@ -173,7 +193,13 @@
         <div class="my">
             <!-- <p class="mip">
                 Part 3 -->
-                <img src="./logo_login.png" width="100em" class="ball" height="60px" alt=""> 
+                <!-- <img src="./logo_login.png" width="100em" class="ball" height="60px" alt="">  -->
+                <!-- <div style="border: 1px solid red;"> -->
+                <i class="fa fa-calendar-check" aria-hidden="true" 
+                style="color: white; size: 100px; border: 1px solid red; background-color: red; padding-left: 30px;
+                padding-top: 0px; margin-top: 20px; margin-left: 20px;
+                 border-radius: 50%; height: 60px; width: 50px; "></i> 
+            <!-- </div> -->
                 <span class="mip">
                     <span  style="font-size: 17px; padding-left: 50%;">
                      2020/2021
@@ -292,7 +318,7 @@
                         Total Units:23
                     </h2>
                 </div>
-        <span style="font-size:30px;cursor:pointer;color: red; "  class="key" onclick="openNav()">
+        <span style="font-size:30px;cursor:pointer;color: blue; "  class="key" onclick="openNav()">
             &#9776; </span>
       </div>
       
@@ -324,6 +350,27 @@
           });
         }
         </script>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
         
            
 </body>
