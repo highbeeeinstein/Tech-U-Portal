@@ -192,23 +192,11 @@ i{
   .dropdown {
     position: relative;
     display: inline-block;
-    width: 100%;
-    top: 0;
-    margin-top: -10px;
-    margin-left: -10px;
+    
     /* margin-right:20px ; */
-    padding-right: 5px;
-    padding-left: 80%;
-    /* padding-right: 10%; */
-    background: linear-gradient(to bottom right, red, orange);
-    /* width: 100%;
-    top: 0;
-    padding-right: 5px;
-    padding-left: 80%;
-    padding-right: 10%;
-    background-color: black;
-    display: flex;
-    border-radius: 50%; */
+    float: right;
+    padding-right: 0px;
+    /* padding-left: 81.7%; */
   }
   
   .dropdown-content {
@@ -231,3 +219,11 @@ i{
   .dropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+  .header{
+    background: linear-gradient(to bottom right, red, orange);
+    width: 101.5%;
+    top: 0;
+    margin-top: -10px;
+    margin-left: -10px;
+    float: right;
+  }

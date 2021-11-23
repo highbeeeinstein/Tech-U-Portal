@@ -163,7 +163,7 @@ i{
     padding-right: 8px;
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 600px) {
     .sidenav {
         /* padding-top: 10px; */
         /* padding-top: 1px; */
@@ -172,9 +172,30 @@ i{
         /* height: 150%; */
       }
     .sidenav a {
-        font-size: 10px;
-        padding: 0px 5px 3px 18px;
+        font-size: 18px;
+        padding: 0px 5px 3px 1px;
       }
+      /* .dropbtn{
+        padding: 2px;
+      }
+      .dropdown-content{
+        min-width: 50px;
+      }
+      .dropdown-content a{
+        padding: 2px 5px;
+
+      }
+      .dropdown{
+        padding-left: 50%;
+        
+      }
+      .header{
+        width: 120%;
+      } */
+      /* img{
+        width: 30em;
+        height: 20px;
+      } */
     /* .key{
         float: none;
     } */
@@ -183,6 +204,7 @@ i{
     background-color: #3498DB;
     color: white;
     padding: 16px;
+    /* float: right; */
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -195,23 +217,11 @@ i{
   .dropdown {
     position: relative;
     display: inline-block;
-    width: 100%;
-    top: 0;
-    margin-top: -10px;
-    margin-left: -10px;
+    float: right;
     /* margin-right:20px ; */
-    padding-right: 5px;
-    padding-left: 80%;
-    /* padding-right: 10%; */
-    background: linear-gradient(to bottom right, red, orange);
-    /* width: 100%;
-    top: 0;
-    padding-right: 5px;
-    padding-left: 80%;
-    padding-right: 10%;
-    background-color: black;
-    display: flex;
-    border-radius: 50%; */
+    padding-right: -0px;
+    /* padding-left: 50%; */
+    /* padding-left: 81.7%; */
   }
   
   .dropdown-content {
@@ -234,3 +244,11 @@ i{
   .dropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+  .header{
+    background: linear-gradient(to bottom right, red, orange);
+    width: 101.5%;
+    top: 0;
+    margin-top: -10px;
+    margin-left: -10px;
+    float: right;
+  }
